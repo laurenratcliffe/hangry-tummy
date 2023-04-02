@@ -8,63 +8,88 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/47180d0ef4.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
    </nav>
    
    <header>
         <div class="headerContainer">
             <img src="./Haungry-Tummy-Assets/header-burger.png" alt="Cheeseburger">
             
-            <div class="header">
+            <div class="header" id="home">
                 <h1>Hangry Tummy</h1>
             </div>
 
             <div class="icons">
-                <i class="fa-brands fa-instagram" style="color: #e75605;"></i>
-                <i class="fa-brands fa-facebook-f" style="color: #e75605;"></i>
-                <i class="fa-brands fa-snapchat" style="color: #e75605;"></i>
-                <i class="fa-brands fa-twitter" style="color: #e75605;"></i>
+                <span><i class="fa-brands fa-instagram" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-facebook-f" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-snapchat" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-twitter" style="color: #e75605;"></i></span>
             </div>
         </div>
    </header>
+   <main>
+        <section>
+                <article class="article1" id="blog">
+                    <div class="menu">
+                        <h2>NEW TO OUR MENU</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor totam cupiditate. At labore laboriosam incidunt quos tenetur repellat. Corrupti dicta aliquam earum esse. Nulla suscipit fugit nemo laudantium iure?</p>
+                        <button>READ MORE</button>
+                    </div>
+                    
+                    <img src="./Haungry-Tummy-Assets/right-photo.jpg" alt="Hamburger and Fries">
+                </article>
 
-   <section>
-        <article class="menu">
-            <h2>NEW TO OUR MENU</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam architecto iusto quos vitae blanditiis minus beatae assumenda totam temporibus pariatur!</p>
-            <button>READ MORE</button>
-            <img src="./Haungry-Tummy-Assets/right-photo.jpg" alt="Hamburger and Fries">
-        </article>
+                <article class="article2">
+                    <img src="./Haungry-Tummy-Assets/left-photo.jpg" alt="Overhead view of food on table">
 
-        <article class="fullExperience">
-            <h2>FULL EXPERIENCE</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, amet impedit officia sed veritatis eum in quisquam vero saepe repellat!</p>
-            <button>READ MORE</button>
-            <img src="./Haungry-Tummy-Assets/left-photo.jpg" alt="Overhead view of food on table">
-        </article>
+                    <div class="fullExperience">
+                        <h2>FULL EXPERIENCE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor totam cupiditate. At labore laboriosam incidunt quos tenetur repellat. Corrupti dicta aliquam earum esse. Nulla suscipit fugit nemo laudantium iure?</p>
+                        <button>READ MORE</button>
+                    </div>
+                </article>
 
-        <article class="desserts">
-            <img src="./Haungry-Tummy-Assets/square-imege.jpg" alt="Colourful desserts">
-            <h2>DESSERTS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint error voluptatibus vitae blanditiis minima iste quos veritatis libero. Harum laboriosam quam consequatur id non eius debitis officia, atque omnis accusantium doloribus labore consequuntur dolore sequi quos suscipit cum corrupti.</p>
-            <button>READ MORE</button>
-        </article>
-   </section>
+                <article class="article3">
+                    <div class="dessertContainer">
+                        <img src="./Haungry-Tummy-Assets/square-imege.jpg" alt="Colourful desserts">
 
-   <section class="icons">
-        <div>
-            <h3>locations menu reach out</h3>
-            <i class="fa-sharp fa-solid fa-location-arrow" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-phone-flip" style="color: #ffffff;"></i>
+                        <div class="desserts">
+                            <h2>DESSERTS</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus soluta vitae eveniet tenetur veritatis explicabo culpa rem, aperiam, commodi optio, facere quo cum reprehenderit perspiciatis quisquam molestias obcaecati! Nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint error voluptatibus vitae blanditiis minima iste quos veritatis libero. Harum laboriosam quam consequatur id non eius debitis officia, atque omnis accusantium doloribus labore consequuntur dolore sequi quos suscipit cum corrupti.</p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </article>
+        </section>
+    </main>
+   <section class="icons2" id="about">
+        <div class="businessIcons">
+            <ul>
+                <li>
+                    <i class="fa-sharp fa-solid fa-location-arrow" style="color: #ffffff;"></i>
+                    <h3>Locations</h3>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
+                    <h3>Menu</h3>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone-flip" style="color: #ffffff;"></i>
+                    <h3>Reach Out</h3>
+                </li>
+            </ul> 
         </div>
    </section>
 
@@ -85,28 +110,46 @@
         </div>
    </section>
 
-   <footer>
+   <footer class="footerContainer">
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li>
-                   <a href="#">Home</a>
+                   <a href="#home">Home</a>
                 </li>
                 <li>
-                   <a href="#">About</a>
+                   <a href="#about">About</a>
                 </li>
                 <li>
-                   <a href="#">Blog</a>
+                   <a href="#blog">Blog</a>
                 </li>
                 <li>
-                   <a href="#">Contact</a>
+                   <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="contact"></div>
-
-        <form action=""></form>
+        <div class="contactContainer" id="contact">
+            <div class="contactInformation">
+                <h3>CONTACT</h3>
+                <p>info@email.com | 123-456-7890 <br>
+                   123 Some Road, Toronto, ON <br>
+                   A5A 5A5, Canada 
+                </p>
+            </div>
+            <div class="emailForm">
+                <h3>STAY UPDATED</h3>
+                <p>Subscribe to our newsletter to stay updated.</p>
+                <form action="email">
+                    <label for="email">email address</label>
+                    <input type="text" id="email" name="email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
    </footer>
+
+
+
 
 </body>
 </html>

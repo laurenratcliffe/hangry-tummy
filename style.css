@@ -1,5 +1,31 @@
-* { 
-    margin: 0
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* General Font Styling */
+button {
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+    border: 2px solid rgb(231, 86, 5);
+    width: 150px;
+    margin: 20px;
+}
+
+h2 { 
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    padding: 10px;
+    color: rgb(231, 86, 5);
+}
+
+p { 
+    font-family: catamaran, sans-serif;
+    font: 20px;
 }
 
 /* styling navigation */
@@ -59,23 +85,96 @@ h1 {
 }
 
 .icons i { 
+    display: flex;
     padding: 5px;
 }
 
 /* styling article sections */
+
 section article { 
-    height: 400px;
     display: flex;
     flex-direction: row;
 }
 
-article img { 
-    height: 400px;
+.article1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* .article1 img { 
+height: 400px;
+}   */
+
+section img { 
     width: 50vw;
+    height: 60vh;
+}
+
+.menu {
+    max-width: 50%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    margin: 60px;
+}
+
+.fullExperience { 
+    margin: 50px;
+}
+
+/* styling article 3 */
+.article3 { 
+    background-color: rgb(238, 238, 238);
+}
+
+.desserts { 
+    margin: 20px;
+}
+
+.dessertContainer { 
+    display: flex;
+    margin: 50px;
+}
+
+
+/* styling Locations, Menu, Reachout  */
+.icons2 {
+    background-color: rgb(231, 86, 5);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.businessIcons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.businessIcons ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.businessIcons li { 
+    list-style: none;
+    padding: 30px;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
 }
 
 
 /* styling gallery section */
+  
 .photos { 
     display: flex;
     flex-direction: column;
@@ -97,5 +196,132 @@ article img {
 .gallery ul li { 
     display: flex;
     justify-content: row;
-    justify-content: space between;
+    padding: 20px;
+}
+
+.gallery li img { 
+    width: 30vw;
+    height: 40vh;
+}
+
+
+/* styling footer */
+.footerContainer { 
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+}
+
+.contactContainer { 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.navigation { 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contactInformation { 
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContainer p, 
+.contactContainer form,
+.contactContainer label { 
+    font-family: catamaran;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer h3 { 
+    font-family: montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(231, 86, 5);
+    line-height: 10px;
+}
+
+
+@media (max-width: 700px) { 
+    nav a { 
+        padding: 5px;
+    }
+
+    .headerContainer { 
+       flex-direction: column-reverse;
+       height: 130vh;
+    }
+
+    .headerContainer img { 
+        position: relative;
+        right: 50%;
+    }
+
+    .icons span { 
+        display: none;
+    }
+    .header h1 { 
+        font-size: 75px;
+        text-align: right;
+    }
+
+    .header { 
+        flex-direction: column;
+    }
+
+    .article1 { 
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .menu { 
+        max-width: 100%;
+    }
+    .article2 { 
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .article3{ 
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    section img { 
+        width: 100%;
+        height: 50%;
+    }
+
+    .dessertContainer { 
+        flex-direction: column;
+    }
+
+    .dessertContainer img { 
+        max-width: 100vw;
+    }
+
+    section { 
+        width: 100vw;
+    }
+    
+    .businessIcons { 
+        flex-direction: column;
+    }
+
+    .businessIcons { 
+        flex-direction: column;
+    }
+
+    .gallery ul li { 
+        flex-direction: column;
+    }
 }
