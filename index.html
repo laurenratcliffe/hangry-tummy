@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangry Tummy</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47180d0ef4.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <nav>
@@ -16,31 +20,38 @@
    </nav>
    
    <header>
-        <img src="./Haungry-Tummy-Assets/header-burger.png" alt="Cheeseburger">
-        
-        <h1>Hangry Tummy</h1>
-        <i class="fa-brands fa-instagram" style="color: #e75605;"></i>
-        <i class="fa-brands fa-facebook-f" style="color: #e75605;"></i>
-        <i class="fa-brands fa-snapchat" style="color: #e75605;"></i>
-        <i class="fa-brands fa-twitter" style="color: #e75605;"></i>
+        <div class="headerContainer">
+            <img src="./Haungry-Tummy-Assets/header-burger.png" alt="Cheeseburger">
+            
+            <div class="header">
+                <h1>Hangry Tummy</h1>
+            </div>
+
+            <div class="icons">
+                <i class="fa-brands fa-instagram" style="color: #e75605;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #e75605;"></i>
+                <i class="fa-brands fa-snapchat" style="color: #e75605;"></i>
+                <i class="fa-brands fa-twitter" style="color: #e75605;"></i>
+            </div>
+        </div>
    </header>
 
    <section>
-        <article>
+        <article class="menu">
             <h2>NEW TO OUR MENU</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam architecto iusto quos vitae blanditiis minus beatae assumenda totam temporibus pariatur!</p>
             <button>READ MORE</button>
             <img src="./Haungry-Tummy-Assets/right-photo.jpg" alt="Hamburger and Fries">
         </article>
 
-        <article>
+        <article class="fullExperience">
             <h2>FULL EXPERIENCE</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, amet impedit officia sed veritatis eum in quisquam vero saepe repellat!</p>
             <button>READ MORE</button>
             <img src="./Haungry-Tummy-Assets/left-photo.jpg" alt="Overhead view of food on table">
         </article>
 
-        <article>
+        <article class="desserts">
             <img src="./Haungry-Tummy-Assets/square-imege.jpg" alt="Colourful desserts">
             <h2>DESSERTS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint error voluptatibus vitae blanditiis minima iste quos veritatis libero. Harum laboriosam quam consequatur id non eius debitis officia, atque omnis accusantium doloribus labore consequuntur dolore sequi quos suscipit cum corrupti.</p>
@@ -50,6 +61,7 @@
 
    <section class="icons">
         <div>
+            <h3>locations menu reach out</h3>
             <i class="fa-sharp fa-solid fa-location-arrow" style="color: #ffffff;"></i>
             <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
             <i class="fa-solid fa-phone-flip" style="color: #ffffff;"></i>
@@ -58,17 +70,19 @@
 
    <section class="photos">
         <h2>THE GRAM</h2>
-        <ul>
-            <li>
-                <img src="./Haungry-Tummy-Assets/gallery-photo-1.jpg" alt="Chicken with garnish">
-            </li>
-            <li>
-                <img src="./Haungry-Tummy-Assets/gallery-photo-2.jpg" alt="Healthy bowl">
-            </li>
-            <li>
-                <img src="./Haungry-Tummy-Assets/gallery-photo-3.jpg" alt="Chicken wings and dip">
-            </li>
-        </ul>
+        <div class="gallery">
+            <ul>
+                <li>
+                    <img src="./Haungry-Tummy-Assets/gallery-photo-1.jpg" alt="Chicken with garnish">
+                </li>
+                <li>
+                    <img src="./Haungry-Tummy-Assets/gallery-photo-2.jpg" alt="Healthy bowl">
+                </li>
+                <li>
+                    <img src="./Haungry-Tummy-Assets/gallery-photo-3.jpg" alt="Chicken wings and dip">
+                </li>
+            </ul>
+        </div>
    </section>
 
    <footer>
