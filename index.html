@@ -20,6 +20,7 @@
         <a href="#about">About</a>
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
+        <span><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
    </nav>
    
    <header>
@@ -31,10 +32,10 @@
             </div>
 
             <div class="icons">
-                <span><i class="fa-brands fa-instagram" style="color: #e75605;"></i></span>
-                <span><i class="fa-brands fa-facebook-f" style="color: #e75605;"></i></span>
-                <span><i class="fa-brands fa-snapchat" style="color: #e75605;"></i></span>
-                <span><i class="fa-brands fa-twitter" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-instagram fa-lg" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-facebook-f fa-lg" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-snapchat fa-lg" style="color: #e75605;"></i></span>
+                <span><i class="fa-brands fa-twitter fa-lg" style="color: #e75605;"></i></span>
             </div>
         </div>
    </header>
@@ -93,9 +94,9 @@
         </div>
    </section>
 
-   <section class="photos">
+   <section class="gallery">
         <h2>THE GRAM</h2>
-        <div class="gallery">
+        <!-- <div class="gallery"> -->
             <ul>
                 <li>
                     <img src="./Haungry-Tummy-Assets/gallery-photo-1.jpg" alt="Chicken with garnish">
@@ -103,31 +104,23 @@
                 <li>
                     <img src="./Haungry-Tummy-Assets/gallery-photo-2.jpg" alt="Healthy bowl">
                 </li>
-                <li>
+                <span><li>
                     <img src="./Haungry-Tummy-Assets/gallery-photo-3.jpg" alt="Chicken wings and dip">
-                </li>
+                </li></span>
             </ul>
-        </div>
+        <!-- </div> -->
    </section>
 
    <footer class="footerContainer">
-        <nav>
-            <ul class="navigation">
-                <li>
-                   <a href="#home">Home</a>
-                </li>
-                <li>
-                   <a href="#about">About</a>
-                </li>
-                <li>
-                   <a href="#blog">Blog</a>
-                </li>
-                <li>
-                   <a href="#contact">Contact</a>
-                </li>
+        <nav class="navigation">
+            <ul> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
+        
         <div class="contactContainer" id="contact">
             <div class="contactInformation">
                 <h3>CONTACT</h3>
@@ -139,11 +132,13 @@
             <div class="emailForm">
                 <h3>STAY UPDATED</h3>
                 <p>Subscribe to our newsletter to stay updated.</p>
-                <form action="email">
-                    <label for="email">email address</label>
-                    <input type="text" id="email" name="email">
-                    <button>Subscribe</button>
-                </form>
+                <div>
+                    <form action="email">
+                        <label for="email" class="sr-only">Enter in your email to stay up to date</label>
+                        <input type="text" id="email" name="email" placeholder="email address">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
    </footer>
